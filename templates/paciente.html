@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% block content %}
+    <br>
+    <h1 style="text-align: center">Estado do paciente</h1>
+    <div class="row" style="justify-content:space-around;height: 400px;border-radius: 10px; padding: 30px">
+        {% csrf_token %}
+        <div class="card text-white bg-danger" style="width: 250px;align-items:center">
+            <div class="card-header"><h5>Batimentos cardíacos</h5></div>
+            <div class="card-body">
+                <div class="card-text">
+                <p hx-get="/batimento" hx-trigger="every 1s"><p>
+                </div>    
+            </div>
+        </div>
+        <div class="card text-white bg-dark" style="width: 250px;align-items:center">
+            <div class="card-header"><h5>Localização</h5></div>
+            <div class ="card-body">
+            <p hx-get="/localizacao" hx-trigger="every 1s"></p>
+        </div>  
+        </div>
+        <div class="card text-white bg-secondary" style="width: 250px">
+            <div class="card-header"><h5>Oxigénio</h5></div>
+            <div class="card-body">
+            <p hx-get="/oxigenio" hx-trigger="every 1s"></p>
+            </div>
+        </div>
+        <div class="card text-white bg-success" style="width: 250px;">
+            <div class="card-header"><h5>Temperatura</h5></div>
+            <div class="card-body">
+                <p hx-get="/temperatura" hx-trigger="every 1s"></p>
+            </div>
+            
+        </div>
+    </div>
+    
+{% endblock content %}

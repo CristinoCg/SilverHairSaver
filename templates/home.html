@@ -1,12 +1,9 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-    </head>
-    <body>
-        <h1>Teste Home View</h1>
-        <p>Vamos ver se funciona</p>
-        <p>Valor de conteudo:{{conteudo}}<p>
-        <input type="button" value="Refresh">
-    </body>
-</html>
+{% extends 'base.html' %}
+{% block content %}
+<br>
+<div>
+        <h1 style="text-align: center">Bem-vindo</h1>
+        <p>Esperamos que possa dar a sua família o melhor controle possível<br>
+        Essa é a nossa missão!</p>    
+</div>
+{% endblock content %}  
