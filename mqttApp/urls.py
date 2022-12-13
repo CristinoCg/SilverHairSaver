@@ -3,7 +3,7 @@ from .views import (
     HomePageView, 
     TemperaturaView, 
     BatimentoView,
-    OxigenioView,
+    
     LocalizacaoView,
     ClienteView)
 
@@ -17,7 +17,5 @@ broker_ulrpatterns=[
     path('batimento', BatimentoView, name='batimento'),
     path('temperatura', TemperaturaView, name='temperatura'),
     path('localizacao', LocalizacaoView, name='localizacao'),
-    path('oxigenio', OxigenioView, name='oxigenio')
-
 ]
 urlpatterns += broker_ulrpatterns

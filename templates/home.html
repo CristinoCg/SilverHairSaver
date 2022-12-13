@@ -1,9 +1,26 @@
 {% extends 'base.html' %}
 {% block content %}
+{% load static %}
 <br>
 <div>
-        <h1 style="text-align: center">Bem-vindo</h1>
-        <p>Esperamos que possa dar a sua família o melhor controle possível<br>
-        Essa é a nossa missão!</p>    
+        <h1 style="text-align: center;color:white">Bem-vindo</h1>
+        <br>
+        <div style="padding-top:20px;width:100%;justify-content:space-around;align-items:center;color:white">
+        <p class="textos" style="position:relative;float:left;">Esperamos que possa dar a sua família o melhor controle possível<br>
+        Essa é a nossa missão! Lorem ipsum dolor sit, amet consectetur 
+        adipisicing elit. Optio libero sunt id nam, nihil soluta temporibus sed adipisci 
+        sequi, magni non, laudantium ducimus sapiente eveniet aut ipsam natus nobis? Obcaecati!
+        </p> 
+        <image src="{% static 'images/idoso1' %}" style="width:400px;height:100%;float:right;margin-right:200px;margin-top: 100px;">
+        </div>
+        <br>
+        <div style="margin-top:100px;width:100%;justify-content:space-around;align-items:center;color:white">
+                <p class="textos" style="position:relative;float:right;">Esperamos que possa dar a sua família o melhor controle possível<br>
+                Essa é a nossa missão! Lorem ipsum dolor sit, amet consectetur 
+                adipisicing elit. Optio libero sunt id nam, nihil soluta temporibus sed adipisci 
+                sequi, magni non, laudantium ducimus sapiente eveniet aut ipsam natus nobis? Obcaecati!
+                </p> 
+                <image src="{% static 'images/idoso1' %}" style="width:400px;height:100%;float:left;margin-left:200px;">
+        </div>
 </div>
 {% endblock content %}  
